@@ -1,4 +1,6 @@
-import styled, { createGlobalStyle } from "styled-components";
+import styled, { createGlobalStyle } from 'styled-components'
+
+import Inter from '../assets/fonts/Inter-Bold.ttf'
 
 export const GlobalStyles = createGlobalStyle`
     * {
@@ -17,8 +19,9 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    background-color: var(--bg-color);
+    font-family: 'Inter';
     color: var(--text-color);
+    background-color: var(--bg-color);
   }
 
   a {
@@ -35,8 +38,22 @@ export const GlobalStyles = createGlobalStyle`
   h1, h2, p {
     margin: 0;
   }
+
+  @font-face {
+    font-family: 'Inter';
+    src: url(${Inter});
+  }
 `
 
 export const Section = styled.section`
-  /* background-color: beige; */
+  padding: 10px;
+`
+
+export const BoxUnderlined = styled.div`
+  width: 50px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 2px solid var(--primary-color);
 `

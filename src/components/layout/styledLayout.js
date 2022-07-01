@@ -7,8 +7,8 @@ export const LayoutContainer = styled.div`
     'header'
     'main';
   width: 95vw;
+  min-width: 305px;
   margin: 0 auto;
-  outline: coral 2px solid;
 
   @media screen and (min-width: 768px) {
     grid-template-columns: repeat(2, 1fr);
