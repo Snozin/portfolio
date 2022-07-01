@@ -17,18 +17,18 @@ export default function Hero() {
       <Title>soy misael duarte</Title>
       <Intro>
         <Highlight>Desarrollador web fullstack</Highlight>. Soy un apasionado de
-        JavaScript y disfruto aprendiendo cosas nuevas constantemente.
+        JavaScript y disfruto aprendiendo cosas nuevas día tras día.
       </Intro>
       <Links>
         <Social>
           <LogoBox>
-            <a href="https://www.linkedin.com/in/misael-duarte/">
-              <LinkedIn width={25} height={25} />
+            <a href="https://github.com/Snozin">
+              <Github width={25} height={25} />
             </a>
           </LogoBox>
           <LogoBox>
-            <a href="https://github.com/Snozin">
-              <Github width={25} height={25} />
+            <a href="https://www.linkedin.com/in/misael-duarte/">
+              <LinkedIn width={25} height={25} />
             </a>
           </LogoBox>
         </Social>

@@ -2,20 +2,19 @@ import styled from 'styled-components'
 import { Section, BoxUnderlined } from '../../../styles/globalStyles'
 
 export const HeroContainer = styled(Section)`
-  /* background-color: green; */
+  padding-bottom: 50px;
 `
 
 export const Title = styled.h1`
+  font-family: 'Inter-Bold';
   text-transform: capitalize;
   font-size: 3rem;
-  font-style: normal;
   line-height: 60px;
   letter-spacing: -0.03em;
 `
 
 export const Intro = styled.p`
   font-size: 1.5rem;
-  font-style: normal;
   line-height: 32px;
   letter-spacing: -0.02em;
 `
@@ -43,9 +42,7 @@ export const LogoBox = styled.div`
   }
 `
 
-export const Resume = styled(BoxUnderlined)`
-  width: 130px;
-`
+export const Resume = styled(BoxUnderlined)``
 
 export const ClipBox = styled.div`
   margin-right: 5px;

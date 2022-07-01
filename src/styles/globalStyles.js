@@ -1,6 +1,7 @@
 import styled, { createGlobalStyle } from 'styled-components'
 
-import Inter from '../assets/fonts/Inter-Bold.ttf'
+import InterBold from '../assets/fonts/Inter-Bold.ttf'
+import Inter from '../assets/fonts/Inter-Medium.ttf'
 
 export const GlobalStyles = createGlobalStyle`
     * {
@@ -22,6 +23,15 @@ export const GlobalStyles = createGlobalStyle`
     font-family: 'Inter';
     color: var(--text-color);
     background-color: var(--bg-color);
+
+    ::-webkit-scrollbar {
+      background-color: transparent;
+      width: 8px;
+    } 
+
+    ::-webkit-scrollbar-thumb {
+      background-color: var(--shadow-color);
+    }
   }
 
   a {
@@ -35,13 +45,18 @@ export const GlobalStyles = createGlobalStyle`
     list-style: none;
   }
 
-  h1, h2, p {
+  h1, h2, h3, p {
     margin: 0;
   }
 
   @font-face {
     font-family: 'Inter';
     src: url(${Inter});
+  }
+
+  @font-face {
+    font-family: 'Inter-Bold';
+    src: url(${InterBold});
   }
 `
 
@@ -50,10 +65,26 @@ export const Section = styled.section`
 `
 
 export const BoxUnderlined = styled.div`
-  width: 50px;
+  width: fit-content;
   height: 40px;
+  padding: 0 5px;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: 'Inter-Bold';
   border-bottom: 2px solid var(--primary-color);
+`
+
+export const Tag = styled.div`
+  padding: 4px 8px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  color: var(--text-color);
+  font-size: 12px;
+  line-height: 18px;
+  border: 1px solid var(--primary-color);
+  border-radius: 4px;
+  &:last-of-type {
+    margin-right: 0;
+  }
 `
