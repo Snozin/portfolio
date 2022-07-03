@@ -21,21 +21,18 @@ export default function Hero() {
       </ImgContainer>
       <InfoContainer>
         <Title>Encantado de conocerte,</Title>
-        <Name>soy Misael</Name>
+        <Name>soy Misael Duarte</Name>
+        <Bio>Siempre curioso, aprendiendo y avanzando cada día.</Bio>
+        <Highlight>Código, Aprendizaje, Mejora.</Highlight>
         <Bio>
-          Texto muy chachi molón sobre como molo y lo mucho que molo, porque a
-          ver, seamos serios, molar molo.
-        </Bio>
-        <Highlight>Codeación Intensa Duramente.</Highlight>
-        <Bio>
-          Habrá que poner algo aquí para que se vea que molo sin que sea muy
-          sobrado para no molestar al resto de mortales que puede que molen
-          también pero no tanto como molo yo.
+          Me apasiona el desarrollo y me encanta crear aplicaciones y webs con
+          JavaScript. Disfruto todo el proceso, desde el planteamiento de ideas
+          hasta la implementación final.
         </Bio>
       </InfoContainer>
 
       <SkillsContainer>
-        <Title style={{ 'padding-bottom': 8 }}>Tengo experiencia con </Title>
+        <Title style={{ 'padding-bottom': 8 }}>Mi experiencia </Title>
         <SkillTags>
           <Tag>JavaScript</Tag>
           <Tag>React</Tag>

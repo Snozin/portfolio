@@ -4,7 +4,6 @@ import { Section } from '../../../styles/globalStyles'
 export const AboutContainer = styled(Section)`
   display: flex;
   flex-direction: column;
-  /* background-color: #EEEEEE; */
 `
 
 export const ImgContainer = styled.div`
@@ -17,7 +16,7 @@ export const ImgContainer = styled.div`
 export const Img = styled.img`
   width: inherit;
   height: inherit;
-  object-fit: cover;
+  object-fit: contain;
 `
 
 export const InfoContainer = styled.div`
@@ -40,8 +39,8 @@ export const Name = styled.h3`
 `
 
 export const Bio = styled.p`
-  font-size: 16px;
-  line-height: 24px;
+  font-size: var(--font-size);
+  line-height: var(--line-height);
 `
 
 export const Highlight = styled.p`
@@ -52,9 +51,7 @@ export const Highlight = styled.p`
   line-height: 26px;
 `
 
-export const SkillsContainer = styled.div`
-  /* background-color: aqua; */
-`
+export const SkillsContainer = styled.div``
 
 export const SkillTags = styled.div`
   display: flex;

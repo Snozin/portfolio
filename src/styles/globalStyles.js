@@ -17,6 +17,23 @@ export const GlobalStyles = createGlobalStyle`
     --border-color: #e3f6f5;
     --text-color: #272343;
     --shadow-color: rgba(3, 19, 23, 0.25);
+
+    --font-size: 0.88rem;
+    --line-height: 150%;
+  }
+
+  @media screen and (min-width: 768px) {
+    :root {
+      --font-size: 1rem;
+      --line-height: 1.5rem;
+    }
+  }
+  
+  @media screen and (min-width: 1024px) {
+    :root {
+      --font-size: 1rem;
+      --line-height: 1.5rem;
+    }
   }
 
   body {
