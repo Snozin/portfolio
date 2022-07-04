@@ -22,5 +22,8 @@ export const LayoutContainer = styled.div`
     grid-template-areas:
       '. . header'
       'main main main';
+
+    max-width: 1024px;
+    width: 1024px;
   }
 `

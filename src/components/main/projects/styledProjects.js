@@ -16,10 +16,26 @@ export const Title = styled.h2`
   line-height: 60px;
   letter-spacing: -0.02em;
   padding-bottom: 20px;
+
+  @media screen and (min-width: 1024px) {
+    padding-left: 65px;
+  }
+`
+
+export const CardsContainer = styled.div`
+  @media screen and (min-width: 1024px) {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
 `
 
 export const ProjectCard = styled.article`
   padding-bottom: 65px;
+
+  @media screen and (min-width: 1024px) {
+    width: 400px;
+  }
 `
 
 export const ImgContainer = styled.div`
@@ -27,6 +43,10 @@ export const ImgContainer = styled.div`
   height: 200px;
   overflow: hidden;
   border-radius: 8px;
+
+  @media screen and (min-width: 1024px) {
+    height: 300px;
+  }
 `
 
 export const Img = styled.img`
@@ -39,7 +59,7 @@ export const ProjectTitle = styled.h3`
   color: var(--primary-color);
   font-size: 24px;
   font-family: 'Inter-Bold';
-  line-height: 32px;
+  line-height: 135%;
   letter-spacing: -0.02em;
   padding: 15px 0 8px;
 `
@@ -52,12 +72,12 @@ export const TagsContainer = styled.div`
 export const Description = styled.p`
   padding: 10px 0;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 150%;
 `
 
 export const LinksContainer = styled.div`
   display: flex;
-  `
+`
 
 export const LinkItem = styled(BoxUnderlined)`
   &:first-of-type {
