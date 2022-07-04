@@ -6,6 +6,10 @@ export const ProjectsContainer = styled(Section)`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media screen and (min-width: 1024px) {
+    padding-bottom: 120px;
+  }
 `
 
 export const Title = styled.h2`

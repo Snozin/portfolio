@@ -30,9 +30,10 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   @media screen and (min-width: 1024px) {
+    /* TODO Refactorizar los tamaños de letra para usarlos desde media queries */
     :root {
-      --font-size: 1rem;
-      --line-height: 1.5rem;
+      /* --font-size: 1rem;
+      --line-height: 1.5rem; */
     }
   }
 
@@ -98,11 +99,15 @@ export const Tag = styled.div`
   margin-bottom: 5px;
   color: var(--text-color);
   font-size: 12px;
-  line-height: 18px;
+  line-height: 150%;
   border: 1px solid var(--primary-color);
   border-radius: 4px;
   &:last-of-type {
     margin-right: 0;
+  }
+
+  @media screen and (min-width: 1024px) {
+    font-size: 16px;
   }
 `
 
@@ -110,4 +115,9 @@ export const Title = styled.h2`
   font-size: 20px;
   line-height: 28px;
   letter-spacing: -0.02em;
+
+  @media screen and (min-width: 1024px) {
+    font-size: 24px;
+    line-height: 135%;
+  }
 `
