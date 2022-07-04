@@ -23,12 +23,6 @@ export const InfoContainer = styled.div`
   padding: 16px 0;
 `
 
-export const Title = styled.h2`
-  font-size: 20px;
-  line-height: 28px;
-  letter-spacing: -0.02em;
-`
-
 export const Name = styled.h3`
   color: var(--primary-color);
   padding-bottom: 12px;

@@ -1,7 +1,6 @@
 import {
   AboutContainer,
   Bio,
-  Title,
   Highlight,
   Img,
   ImgContainer,
@@ -10,7 +9,7 @@ import {
   SkillsContainer,
   SkillTags,
 } from './styledAbout'
-import { Tag } from '../../../styles/globalStyles'
+import { Tag, Title } from '../../../styles/globalStyles'
 import profile from '../../../assets/img/profile-small.jpg'
 
 export default function Hero() {
@@ -32,7 +31,7 @@ export default function Hero() {
       </InfoContainer>
 
       <SkillsContainer>
-        <Title style={{ 'padding-bottom': 8 }}>Mi experiencia </Title>
+        <Title style={{ paddingBottom: 8 }}>Mi experiencia </Title>
         <SkillTags>
           <Tag>JavaScript</Tag>
           <Tag>React</Tag>

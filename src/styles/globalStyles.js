@@ -28,7 +28,7 @@ export const GlobalStyles = createGlobalStyle`
       --line-height: 1.5rem;
     }
   }
-  
+
   @media screen and (min-width: 1024px) {
     :root {
       --font-size: 1rem;
@@ -104,4 +104,10 @@ export const Tag = styled.div`
   &:last-of-type {
     margin-right: 0;
   }
+`
+
+export const Title = styled.h2`
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: -0.02em;
 `
