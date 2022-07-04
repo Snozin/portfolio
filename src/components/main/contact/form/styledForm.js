@@ -8,12 +8,13 @@ export const Input = styled.input`
   width: 100%;
   height: 35px;
   padding: 5px;
-  border: 1px solid var(--shadow-color);
+  border: 2px solid var(--shadow-color);
   border-radius: 5px;
   outline: none;
+  background-color: var(--bg-color);
 
   &:focus {
-    border: 1px solid var(--primary-color);
+    border: 2px solid var(--primary-color);
   }
 `
 
@@ -36,13 +37,14 @@ export const TextArea = styled.textarea`
   width: 100%;
   height: 150px;
   padding: 5px;
-  border: 1px solid var(--shadow-color);
+  background-color: var(--bg-color);
+  border: 2px solid var(--shadow-color);
   border-radius: 5px;
   outline: none;
   resize: none;
 
   &:focus {
-    border: 1px solid var(--primary-color);
+    border: 2px solid var(--primary-color);
   }
 `
 
