@@ -3,6 +3,13 @@ import { Section, BoxUnderlined } from '../../../styles/globalStyles'
 
 export const HeroContainer = styled(Section)`
   padding-bottom: 50px;
+
+  @media screen and (min-width: 1024px) {
+    max-width: 550px;
+    width: 550px;
+    margin: 0 auto;
+    padding-bottom: 120px;
+  }
 `
 
 export const Title = styled.h1`
@@ -28,6 +35,10 @@ export const Links = styled.div`
   justify-content: space-between;
   align-items: center;
   margin-top: 15px;
+
+  @media screen and (min-width: 1024px) {
+    /* padding-right: 10px; */
+  }
 `
 
 export const Social = styled.div`
