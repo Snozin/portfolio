@@ -38,6 +38,8 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   body {
+    margin: 0;
+
     font-family: 'Inter';
     color: var(--text-color);
     background-color: var(--bg-color);
