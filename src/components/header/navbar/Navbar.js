@@ -2,6 +2,7 @@ import { NavContainer, NavList, NavItem } from './styledNavbar'
 export default function Navbar() {
   return (
     <NavContainer>
+      Menusito
       <NavList>
         <NavItem>
           <a href="#Home">Home</a>
