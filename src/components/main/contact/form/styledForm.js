@@ -6,8 +6,7 @@ export const Form = styled.form`
 
 export const Input = styled.input`
   width: 100%;
-  height: 35px;
-  padding: 5px;
+  padding: 8px 10px;
   border: 2px solid var(--shadow-color);
   border-radius: 5px;
   outline: none;
@@ -18,7 +17,7 @@ export const Input = styled.input`
   }
 
   @media screen and (min-width: 1024px) {
-    height: 65px;
+    padding: 23px 10px;
   }
 `
 
@@ -31,7 +30,7 @@ export const Label = styled.label`
   padding: 0 5px;
 
   @media screen and (min-width: 1024px) {
-    font-size: 16px;
+    font-size: 1.1rem;
     top: -12px;
     left: 15px;
     padding: 0 8px;
@@ -52,7 +51,7 @@ export const InputContainer = styled.div`
 export const TextArea = styled.textarea`
   width: 100%;
   height: 130px;
-  padding: 5px;
+  padding: 10px 10px 5px;
   background-color: var(--bg-color);
   border: 2px solid var(--shadow-color);
   border-radius: 5px;
