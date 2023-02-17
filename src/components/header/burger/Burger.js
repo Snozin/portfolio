@@ -2,7 +2,7 @@ import { BurgerContainer, BurgerLines, Line1, Line2, Line3 } from './styledBurge
 
 export default function Burger() {
   return (
-    <BurgerContainer className='ContieneCasne'>
+    <BurgerContainer className='BurgerContainer'>
       <BurgerLines>
         <Line1 />
         <Line2 />

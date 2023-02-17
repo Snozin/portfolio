@@ -5,9 +5,8 @@ export const HeaderContainer = styled.header`
 
   /* position: sticky; */
   /* top: 10px; */
-  padding-right: 10px;
   display: flex;
   justify-content: flex-end;
   max-width: 95vw;
-  height: 55px
+  height: 55px;
 `
