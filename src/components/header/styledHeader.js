@@ -3,10 +3,10 @@ import styled from 'styled-components'
 export const HeaderContainer = styled.header`
   grid-area: header;
 
-  /* position: sticky; */
-  /* top: 10px; */
   display: flex;
   justify-content: flex-end;
+  padding-right: 10px;
+  align-items: center;
   max-width: 95vw;
-  height: 55px;
+  height: 60px;
 `

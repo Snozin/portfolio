@@ -1,28 +1,30 @@
 import { HeaderContainer } from './styledHeader'
 import Burger from './burger/Burger'
 import Navbar from './navbar/Navbar'
-import { useState, useEffect } from 'react'
+import { useState, useLayoutEffect } from 'react'
 
 export default function Header() {
-  const [screenWidth, setScreenWidth] = useState(window.innerWidth)
+  const [isMidScreen, setIsMidScreen] = useState(
+    window.matchMedia('max-width: 1023')
+  )
 
-  useEffect(() => {
-    const handleResize = () => {
-      setScreenWidth(window.innerWidth)
+  useLayoutEffect(() => {
+    const mediaQuery = window.matchMedia('(max-width: 1023px)')
+
+    const handleQueryChange = (event) => {
+      setIsMidScreen(event.matches)
     }
 
-    // Agregar el evento resize a window y almacenar el ancho en el estado
-    window.addEventListener('resize', handleResize)
+    mediaQuery.addEventListener('change', handleQueryChange)
 
-    // Limpiar el listener del resize cuando se desmonte el componente
     return () => {
-      window.removeEventListener('resize', handleResize)
+      mediaQuery.removeEventListener('change', handleQueryChange)
     }
   }, [])
 
   return (
     <HeaderContainer>
-      {screenWidth < 1024 ? <Burger></Burger> : <Navbar></Navbar>}
+      {isMidScreen ? <Burger /> : <Navbar />}
     </HeaderContainer>
   )
 }

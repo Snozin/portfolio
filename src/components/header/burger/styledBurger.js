@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 export const BurgerContainer = styled.div`
   height: 30px;
+  cursor: pointer;
   /* background-color: var(--bg-color); */
   /* padding: 0 5px; */
 `
@@ -50,4 +51,24 @@ export const Button = styled.button`
   border: none;
   background-color: transparent;
   cursor: pointer;
+`
+const sideDiv = styled.div`
+  background-color: red;
+  /* height: 30px;
+  width: 50px; */
+
+`
+
+export const MenuContainer = styled(sideDiv)`
+  top:60px;
+  position: absolute;
+  display: ${(props) => (props.show ? 'flex' : 'none')};
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-right: 10px;
+`
+
+export const MenuItem = styled.span`
+  background-color: #fff;
 `
