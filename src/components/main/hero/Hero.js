@@ -13,7 +13,7 @@ import { LinkedIn, Github, Clip } from '../../icons'
 
 export default function Hero() {
   return (
-    <HeroContainer>
+    <HeroContainer id='Home'>
       <Title>soy misael duarte</Title>
       <Intro>
         <Highlight>Desarrollador web fullstack</Highlight>. Soy un apasionado de

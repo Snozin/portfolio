@@ -3,7 +3,7 @@ import { Title } from '../../../styles/globalStyles'
 import ContactForm from './form/ContactForm'
 export default function Hero() {
   return (
-    <ContactContainer>
+    <ContactContainer id='Contact'>
       <Title>Envíame un mensaje</Title>
       <ContactForm />
     </ContactContainer>
