@@ -18,7 +18,7 @@ import { Code, Check } from '../../icons'
 
 export default function Hero() {
   return (
-    <ProjectsContainer>
+    <ProjectsContainer id='Portfolio'>
       <Title>Proyectos</Title>
       <CardsContainer>
         <ProjectCard>

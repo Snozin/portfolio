@@ -4,27 +4,27 @@ import Navbar from './navbar/Navbar'
 import { useState, useLayoutEffect } from 'react'
 
 export default function Header() {
-  const [isMidScreen, setIsMidScreen] = useState(
-    window.matchMedia('max-width: 1023')
-  )
-
+  const [isMidScreen, setIsMidScreen] = useState(window.innerWidth)
+  const [isActive, setIsActive] = useState(false)
   useLayoutEffect(() => {
-    const mediaQuery = window.matchMedia('(max-width: 1023px)')
-
-    const handleQueryChange = (event) => {
-      setIsMidScreen(event.matches)
+    const handleQueryChange = () => {
+      setIsMidScreen(window.innerWidth)
     }
 
-    mediaQuery.addEventListener('change', handleQueryChange)
+    window.addEventListener('resize', handleQueryChange)
 
     return () => {
-      mediaQuery.removeEventListener('change', handleQueryChange)
+      window.removeEventListener('resize', handleQueryChange)
     }
   }, [])
 
   return (
-    <HeaderContainer>
-      {isMidScreen ? <Burger /> : <Navbar />}
+    <HeaderContainer isActive={isActive}>
+      {isMidScreen < 1024 ? (
+        <Burger isActive={isActive} setIsActive={setIsActive} />
+      ) : (
+        <Navbar />
+      )}
     </HeaderContainer>
   )
 }

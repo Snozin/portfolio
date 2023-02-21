@@ -1,35 +1,44 @@
-import { useState } from 'react'
+import { NavContainer, NavItem, NavList } from '../navbar/styledNavbar'
 import {
   BurgerContainer,
   BurgerLines,
   Line1,
   Line2,
   Line3,
-  MenuContainer,
-  MenuItem,
 } from './styledBurger'
 
-export default function Burger() {
-  const [showSidebar, setShowSidebar] = useState(false)
+export default function Burger({ isActive, setIsActive }) {
   const handleClick = (event) => {
-    console.log('uwu', event)
-    setShowSidebar(!showSidebar)
+    setIsActive(!isActive)
   }
 
   return (
     <>
       <BurgerContainer className="BurgerContainer" onClick={handleClick}>
         <BurgerLines>
-          <Line1 />
-          <Line2 />
-          <Line3 />
+          <Line1 isActive={isActive} />
+          <Line2 isActive={isActive} />
+          <Line3 isActive={isActive} />
         </BurgerLines>
       </BurgerContainer>
-      <MenuContainer show={showSidebar}>
-        <MenuItem>cosa</MenuItem> 
-        <MenuItem>cosa</MenuItem> 
-        <MenuItem>cosa</MenuItem> 
-      </MenuContainer>
+      {isActive && (
+        <NavContainer className="NavContainer">
+          <NavList>
+            <NavItem>
+              <a href="#Home">Home</a>
+            </NavItem>
+            <NavItem className="NavItem">
+              <a href="#Portfolio">Portfolio</a>
+            </NavItem>
+            <NavItem className="NavItem">
+              <a href="#About">About Me</a>
+            </NavItem>
+            <NavItem className="NavItem">
+              <a href="#Contact">Contact</a>
+            </NavItem>
+          </NavList>
+        </NavContainer>
+      )}
     </>
   )
 }

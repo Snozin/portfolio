@@ -15,7 +15,7 @@ import profile from '../../../assets/img/profile-small.jpg'
 
 export default function Hero() {
   return (
-    <AboutContainer>
+    <AboutContainer id='About'>
       <HorizontalCard>
         <ImgContainer>
           <Img src={profile} />

@@ -1,8 +1,20 @@
 import styled from 'styled-components'
 
-export const NavContainer = styled.nav`
-  background-color: green;
-  /* width: 50px; */
+const NavbarContainer = styled.nav`
+  background-color: var(--text-color);
+  /* opacity: 0.98; */
+  color: var(--primary-color);
+  font-family: 'Inter-Bold';
+  font-size: 2rem;
+`
+
+export const NavContainer = styled(NavbarContainer)`
+  display: block;
+  position: absolute;
+  top: 55px;
+  right: 0;
+  width: 100%;
+
   @media screen and (min-width: 1024px) {
     display: flex;
     align-items: center;
@@ -13,7 +25,12 @@ export const NavContainer = styled.nav`
 `
 
 export const NavList = styled.ul`
-  display: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 10px 20px;
+
   @media screen and (min-width: 1024px) {
     display: flex;
     background-color: blue;
@@ -21,6 +38,7 @@ export const NavList = styled.ul`
 `
 
 export const NavItem = styled.li`
+  padding: 5px 0;
   @media screen and (min-width: 1024px) {
     background-color: red;
   }

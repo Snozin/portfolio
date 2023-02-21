@@ -6,7 +6,7 @@ export const LayoutContainer = styled.div`
   grid-template-areas:
     'header'
     'main';
-  width: 95vw;
+  /* width: 95vw; */
   min-width: 305px;
   margin: 0 auto;
 
