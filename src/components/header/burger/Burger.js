@@ -22,9 +22,9 @@ export default function Burger({ isActive, setIsActive }) {
         </BurgerLines>
       </BurgerContainer>
       {isActive && (
-        <NavContainer className="NavContainer">
+        <NavContainer className="NavContainer" onClick={handleClick}>
           <NavList>
-            <NavItem>
+            <NavItem className='NavItem'>
               <a href="#Home">Home</a>
             </NavItem>
             <NavItem className="NavItem">
