@@ -81,7 +81,7 @@ export const GlobalStyles = createGlobalStyle`
 `
 
 export const Section = styled.section`
-  padding: 10px;
+  padding: 10px 25px;
 `
 
 export const BoxUnderlined = styled.div`
