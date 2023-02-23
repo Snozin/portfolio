@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 const NavbarContainer = styled.nav`
   background-color: var(--text-color);
+  /* TODO Intentar jugar con la opacidad para el fondo semitransparente */
   /* opacity: 0.98; */
   color: var(--primary-color);
   font-family: 'Inter-Bold';
@@ -29,7 +30,7 @@ export const NavList = styled.ul`
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  padding: 10px 20px;
+  padding: 0 20px 10px;
 
   @media screen and (min-width: 1024px) {
     display: flex;
