@@ -11,12 +11,12 @@ Hay una versión online del proyecto en [Github Pages](https://snozin.github.io/
 Para arrancar el proyecto en local la primera vez:
 ### `npm run setup`
  ~~~
-Instalará los paquetes de dependencias y arrancará el servidor de desarrollo la primera vez que se ejecute.
+Instalar paquetes de dependencias y arrancar el servidor de desarrollo por primera vez.
  ~~~
 
 ### `npm start`
  ~~~
-Arranca la app en el servidor de desarrollo local. En este modo, los cambios que se guarden refrescarán automáticamente el navegador.
+Arrancar la app en el servidor de desarrollo local.
  ~~~
 En este enlace [http://localhost:3000](http://localhost:3000) podrás ver la app en tu navegador una vez arrancada.
 
