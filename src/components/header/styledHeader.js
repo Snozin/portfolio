@@ -7,10 +7,9 @@ export const HeaderContainer = styled.header`
   align-items: center;
   padding-right: 20px;
   height: 60px;
-  background-color: ${props => props.isActive && 'var(--text-color)'};
-  /* opacity: ${props => props.isActive ? '0.5' : '1'}; */
+  background-color: ${(props) => props.isActive && 'var(--text-color)'};
 
-  @media screen and (min-width: 1024px){
+  @media screen and (min-width: 1024px) {
     display: flex;
     height: 70px;
     padding: 0 75px;

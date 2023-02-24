@@ -13,7 +13,7 @@ import { LinkedIn, Github, Clip } from '../../icons'
 
 export default function Hero() {
   return (
-    <HeroContainer id='Home'>
+    <HeroContainer id="Home">
       <Title>soy misael duarte</Title>
       <Intro>
         <Highlight>Desarrollador web fullstack</Highlight>. Soy un apasionado de
@@ -34,10 +34,11 @@ export default function Hero() {
         </Social>
         <Resume>
           {/* //TODO Implementar funcionalidad de descarga del CV */}
+
           <ClipBox>
             <Clip />
           </ClipBox>
-          Descargar CV
+          <a href="#">Descargar CV</a>
         </Resume>
       </Links>
     </HeroContainer>

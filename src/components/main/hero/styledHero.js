@@ -35,10 +35,6 @@ export const Links = styled.div`
   justify-content: space-between;
   align-items: center;
   margin-top: 15px;
-
-  @media screen and (min-width: 1024px) {
-    /* padding-right: 10px; */
-  }
 `
 
 export const Social = styled.div`
