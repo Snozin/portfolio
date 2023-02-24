@@ -5,8 +5,7 @@ export const ContactContainer = styled(Section)`
   padding-bottom: 50px;
 
   @media screen and (min-width: 1024px) {
-    max-width: 550px;
-    width: 550px;
+    max-width: 700px;
     margin: 0 auto;
     padding-bottom: 200px;
   }
