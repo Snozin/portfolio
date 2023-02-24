@@ -25,11 +25,9 @@ export default function Burger({ isActive, setIsActive }) {
         // TODO Añadir aniamción para desplegar el menú
         <NavContainer className="NavContainer" onClick={handleClick}>
           <NavList>
-          <a href="#Home">
             <NavItem className='NavItem'>
-              Home
+              <a href="#Home">Home</a>
             </NavItem>
-              </a>
             <NavItem className="NavItem">
               <a href="#Portfolio">Portfolio</a>
             </NavItem>

@@ -19,7 +19,7 @@ export default function Header() {
   }, [])
 
   return (
-    <HeaderContainer isActive={isActive}>
+    <HeaderContainer isActive={isActive} className='headerContainer'>
       {isMidScreen < 1024 ? (
         <Burger isActive={isActive} setIsActive={setIsActive} />
       ) : (

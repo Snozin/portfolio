@@ -20,10 +20,10 @@ export const LayoutContainer = styled.div`
   @media screen and (min-width: 1024px) {
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas:
-      '. . header'
+      'header header header'
       'main main main';
 
     max-width: 1024px;
-    width: 1024px;
+    /* width: 1024px; */
   }
 `

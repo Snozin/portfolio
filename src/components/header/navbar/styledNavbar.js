@@ -17,11 +17,9 @@ export const NavContainer = styled(NavbarContainer)`
   width: 100%;
 
   @media screen and (min-width: 1024px) {
-    display: flex;
-    align-items: center;
-    align-self: flex-end;
-    height: 60px;
-    background-color: aqua;
+    position: static;
+    font-size: 1.3rem;
+    background-color: transparent;
   }
 `
 
@@ -33,14 +31,17 @@ export const NavList = styled.ul`
   padding: 0 20px 10px;
 
   @media screen and (min-width: 1024px) {
-    display: flex;
-    background-color: blue;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 15px 0;
   }
 `
 
 export const NavItem = styled.li`
   padding: 5px 0;
   @media screen and (min-width: 1024px) {
-    background-color: red;
+    padding:0px;
+    padding-right:20px;
   }
 `

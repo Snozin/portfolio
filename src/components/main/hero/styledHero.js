@@ -5,9 +5,9 @@ export const HeroContainer = styled(Section)`
   padding-bottom: 50px;
 
   @media screen and (min-width: 1024px) {
-    max-width: 550px;
-    width: 550px;
+    max-width: 700px;
     margin: 0 auto;
+    padding-top: 90px;
     padding-bottom: 120px;
   }
 `

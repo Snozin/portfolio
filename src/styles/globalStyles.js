@@ -11,6 +11,7 @@ export const GlobalStyles = createGlobalStyle`
 
   :root {
     --bg-color: #f8fbfb;
+    --body-color: #f3f3f3;
     --primary-color: #ff9d00;
     --primary-color-offset: #ffca00;
     --secondary-color: #bae8e8;
@@ -51,6 +52,10 @@ export const GlobalStyles = createGlobalStyle`
 
     ::-webkit-scrollbar-thumb {
       background-color: var(--shadow-color);
+    }
+    
+    @media screen and (min-width:1024px){
+      background-color: var(--body-color);
     }
   }
 
