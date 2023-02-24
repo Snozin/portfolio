@@ -16,8 +16,7 @@ export const HeaderContainer = styled.header`
     padding: 0 75px;
     background-color: var(--text-color);
     border-radius: 0 0 8px 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
-    /* box-shadow: 0px 15px 2px red; */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.55);
     z-index: 1;
   }
 `
