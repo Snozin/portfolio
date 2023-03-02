@@ -33,12 +33,17 @@ export default function Hero() {
           </LogoBox>
         </Social>
         <Resume>
-          {/* //TODO Implementar funcionalidad de descarga del CV */}
-
           <ClipBox>
             <Clip />
           </ClipBox>
-          <a href="#">Descargar CV</a>
+          <a
+            href="https://drive.google.com/file/d/1QuDwZp0ODn_qqr1P9JqrA7wDzz_LqwlP/view?usp=share_link"
+            download="CV Misael"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Descargar CV
+          </a>
         </Resume>
       </Links>
     </HeroContainer>
