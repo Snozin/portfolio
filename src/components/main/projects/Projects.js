@@ -23,9 +23,15 @@ export default function Hero() {
       <Title>Proyectos</Title>
       <CardsContainer>
         <ProjectCard>
-          <ImgContainer>
-            <Img src={ticTacToe || placeholder} />
-          </ImgContainer>
+          <a
+            href="https://snozin.github.io/TicTacToe-React/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <ImgContainer>
+              <Img src={ticTacToe || placeholder} />
+            </ImgContainer>
+          </a>
           <ProjectTitle>Tic Tac Toe</ProjectTitle>
           <TagsContainer>
             <Tag>HTML</Tag>
@@ -35,8 +41,8 @@ export default function Hero() {
           </TagsContainer>
           <Description>
             Pequeño juego de tres en raya (TicTacToe) realizado con React para
-            practicar con el hook useEffect, los renderizados condicionales
-            y el renderizado de listas.
+            practicar con el hook useEffect, los renderizados condicionales y el
+            renderizado de listas.
           </Description>
           <LinksContainer>
             <LinkItem>
